@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+.header { grid-area: header;}
+.menu { grid-area: menu;}
+.main {
+      font-family: 'Open Sans', 'sans-serif';
+      background-color: #fff;
+      color: #444;
+}
+.right { grid-area: right;}
+.footer { grid-area: footer;}
+
+.grid-container {
+
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    'menu main main main right'
+    'footer footer footer footer footer footer';
+    grid-gap: 5px; /* margen entre elementos */
+    color: #fff;
+    padding: 10px;
+}
+
+.grid-container > div {
+  background-color: rgb(191,207, 241);
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 150%;
+  margin-bottom: 10px;
+}
+
