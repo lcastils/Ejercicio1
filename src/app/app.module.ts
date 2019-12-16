@@ -7,6 +7,8 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { MenuComponent } from './components/menu/menu.component';
 import { NewsComponent } from './components/news/news.component';
+import { MoviesComponent } from './components/movies/movies.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -14,11 +16,13 @@ import { NewsComponent } from './components/news/news.component';
     HeaderComponent,
     FooterComponent,
     MenuComponent,
-    NewsComponent
+    NewsComponent,
+    MoviesComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

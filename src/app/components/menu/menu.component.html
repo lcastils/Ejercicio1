@@ -1,3 +1,6 @@
-<p>
-  menu works!
-</p>
+<ul class="menu">
+
+  <li *ngFor="let menu of menus" (click)="onSelect(menu)">
+    <span>{{menu.titulo}}</span>
+  </li>
+

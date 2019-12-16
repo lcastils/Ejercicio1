@@ -1,0 +1,8 @@
+<div>
+  <div><label for="">Buscar Pelicula</label></div>
+  <div><input type="text" [(ngModel)] ="movieName" ></div>
+  <br> {{movieName | json }}
+</div>
+<div>
+  <div><input type ="button" value="Buscar" (click)="search()"></div>
+</div>
