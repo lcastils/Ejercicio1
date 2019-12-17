@@ -16,7 +16,7 @@ export class MenuComponent implements OnInit {
   ngOnInit() {
   }
 
-  onSelect(data: Menu){
+  onSelect(data: Menu) {
     this.selectedMenu = data;
     this.router.navigate([this.selectedMenu.url]);
 

@@ -9,6 +9,11 @@ import { MenuComponent } from './components/menu/menu.component';
 import { NewsComponent } from './components/news/news.component';
 import { MoviesComponent } from './components/movies/movies.component';
 import { FormsModule } from '@angular/forms';
+import { LoginComponent } from './components/login/login.component';
+import { HttpClientModule } from '@angular/common/http';
+import { DetalleComponent } from './components/detalle/detalle.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import {MatCardModule} from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -17,12 +22,17 @@ import { FormsModule } from '@angular/forms';
     FooterComponent,
     MenuComponent,
     NewsComponent,
-    MoviesComponent
+    MoviesComponent,
+    LoginComponent,
+    DetalleComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule
+    FormsModule,
+    HttpClientModule,
+    BrowserAnimationsModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
